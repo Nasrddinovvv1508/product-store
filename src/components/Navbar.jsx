@@ -19,7 +19,9 @@ function Navbar() {
                 </div>
                 <div className="navbar-end">
                     <div>
-                        <MainButton text='booking now' />
+                        <Link href={`/allProducts`}>
+                            <MainButton text='booking now' />
+                        </Link>
                     </div>
                 </div>
             </div>
