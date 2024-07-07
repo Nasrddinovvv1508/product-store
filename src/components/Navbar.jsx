@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link'
+import { MainButton } from '.';
 
 function Navbar() {
     return (
@@ -11,12 +14,12 @@ function Navbar() {
                     <ul className="menu-horizontal px-1 flex gap-5 text-[17px] font-bold">
                         <li><Link className='hover:text-orange-500' href={`/`}>Home</Link></li>
                         <li><Link className='hover:text-orange-500' href={`/about`}>About</Link></li>
-                        <li><Link className='hover:text-orange-500' href={`/products`}>all Products</Link></li>
+                        <li><Link className='hover:text-orange-500' href='/allProducts'>all Products</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
                     <div>
-                        <button className="btn text-white bg-[#DC780B] hover:bg-[#a65f13]">Booking Now</button>
+                        <MainButton text='booking now' />
                     </div>
                 </div>
             </div>

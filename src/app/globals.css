@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Nunito Sans';
   transition: all 0.4s;
+  font-family: 'Nunito Sans';
 }
 
 .main-container {
