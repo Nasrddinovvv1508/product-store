@@ -17,9 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
   return (
-    <html lang="en">
+    <html lang="en" className="bg-[#e3e9ff]">
       <link className="rounded-xl" rel="shortcut icon" href={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6YRcr3vhk-BTfY9CAaNEeJDBWShYwFViONQ&s`} type="image/x-icon" />
-      <body className={nunitoSans.className}>
+      <body className={`${nunitoSans.className}`}>
 
         <Navbar />
         <main>

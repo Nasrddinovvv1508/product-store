@@ -67,7 +67,7 @@ export default function Home() {
 
           <div className="flex justify-around flex-wrap gap-10">
             {categories.map((category, index) => (
-              <div key={index} className="bg-zinc-300 rounded-t-full rounded-3xl flex flex-col items-center">
+              <div key={index} className="bg-base-300 rounded-t-full rounded-3xl flex flex-col items-center">
                 <img className="rounded-full" src="../assets/category-image.png" alt="category image" />
                 <div className="w-10/12 my-6">
                   <Link href={`/products/${category}`}>
