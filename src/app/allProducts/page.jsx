@@ -34,7 +34,7 @@ function AllProducts() {
                 <div className="card bg-base-100 w-[360px] h-[536px] shadow-xl">
                   <figure className="border-2 bg-orange-400 object-cover" style={{ borderBottomRightRadius: `80px`, borderTopLeftRadius: `80px` }}>
                     <img
-                      src={product.thumbnail}
+                      src={product.images[0]}
                       alt="prod"
                       className="border-2  w-full h-[355px]"
                     />

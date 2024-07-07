@@ -40,11 +40,11 @@ function Products({ params }) {
         <div className="grid grid-cols-3 gap-6">
           {newProducts.map((prod) => {
             return (
-              <Link key={prod.id} href={`/productDesc${prod.id}`}>
+              <Link key={prod.id} href={`/productDesc/${prod.id}`}>
                 <div className="card bg-base-100 w-[360px] h-[536px] shadow-xl">
                   <figure className="border-2 bg-orange-400 object-cover" style={{ borderBottomRightRadius: `80px`, borderTopLeftRadius: `80px` }}>
                     <img
-                      src={prod.thumbnail}
+                      src={prod.images[0]}
                       alt="prod"
                       className="border-2  w-full h-[355px]"
                     />

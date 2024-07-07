@@ -19,3 +19,9 @@ body {
 .active {
   background-color: red;
 }
+
+.typing-effect .typing::after {
+  content: '';
+  border-right: none !important;
+  animation: none !important;
+}
