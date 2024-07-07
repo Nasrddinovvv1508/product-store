@@ -4,14 +4,6 @@ import { MainButton } from '@/components';
 import { useEffect, useState } from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 
-// let getData = async (id) => {
-//     let request = await fetch(`https://dummyjson.com/products/${id}`)
-
-//     let data = await request.json();
-
-//     return { data }
-// }
-
 function ProductDecs({ params }) {
     const [product, setProduct] = useState([])
     const [isPending, setIsPending] = useState(false)
@@ -29,8 +21,6 @@ function ProductDecs({ params }) {
         getData()
     }, [])
 
-    console.log(product);
-
     return (
         <section>
             <div className='main-container'>
@@ -39,18 +29,20 @@ function ProductDecs({ params }) {
                     {isPending ? <span className="loading loading-spinner loading-lg"></span> :
                         <div className='w-full my-12 flex items-center'>
                             <div className='w-5/12 shadow-xl border-black h-[450px]'>
-                                <img src={product.images && product.images[0]} alt={product && product.title} />
+                                <img className='h-full' src={product.images && product.images[0]} alt={product && product.title} />
                             </div>
                             <div className='w-6/12 shadow-2xl border-2 h-[510px] p-[50px]'>
                                 {product.title && (
-                                    <ReactTypingEffect
-                                        text={product.title}
-                                        speed={30}
-                                        eraseSpeed={0}
-                                        eraseDelay={1000000}
-                                        typingDelay={50}
-                                        className='text-4xl font-bold mb-5 mt-10 mx-auto text-center w-7/12'
-                                    />
+                                    <center>
+                                        <ReactTypingEffect
+                                            text={product.title}
+                                            speed={30}
+                                            eraseSpeed={0}
+                                            eraseDelay={1000000}
+                                            typingDelay={50}
+                                            className='text-4xl font-bold mb-5 mt-10 mx-auto text-center w-7/12'
+                                        />
+                                    </center>
                                 )}
                                 <br />
                                 {product.description && (
